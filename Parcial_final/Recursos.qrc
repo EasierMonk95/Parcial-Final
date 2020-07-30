@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/new/Bolas">
+        <file>Red</file>
+        <file>Pink</file>
+        <file>Black</file>
+        <file>Blue</file>
+        <file>WBlue</file>
+    </qresource>
+</RCC>

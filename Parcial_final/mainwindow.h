@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QTimer>
 #include <QGraphicsItem>
+#include <QGraphicsScene>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -16,6 +17,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    void randomizer();
 
 
 private slots:
@@ -27,6 +29,7 @@ private slots:
 
 private:
     QTimer *t;
+    QGraphicsPixmapItem *bolas;
     double x, y, vx, vy, T=0.001, a=-9.8, yo;
     Ui::MainWindow *ui;
 
